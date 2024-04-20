@@ -25,7 +25,7 @@ export default {
     },
     SET_RAISON_FOR_SELECTED_RESPONSE(state, {depot, raison}) {
       // Parcourt l'ensemble des reponses selectionnées.
-      state.selectedResponses.map((reponse, key) => {
+      state.selectedResponses.map((reponse) => {
         // Si la réponse fait parti du dépot
         if(reponse.depot === depot.id && !reponse.raison) {
           // On ajoute l'attribut "raison" avec la valeur
